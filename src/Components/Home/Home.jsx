@@ -4,6 +4,7 @@ import Me from '../assets/avatar-1.svg'
 import Headersocials from './Headersocials';
 import Scrolldown from './Scrolldown';
 import Shapes from './Shapes';
+import pdffile from'../../Deepu.pdf'
 const Home = () => {
   return (
     <div class="area" >
@@ -30,7 +31,7 @@ const Home = () => {
 
           <Headersocials />
 
-          <a href="#contact" className="btn">Hire Me</a>
+          <a href={pdffile } target='_blank' className="btn">Hire Me</a>
 
           <Scrolldown />
         </div>

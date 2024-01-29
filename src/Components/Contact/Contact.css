@@ -82,7 +82,17 @@
     margin-bottom: 1.875rem;
     height: 3.75rem;
 }
-
+.contact_form {
+  display: grid;
+  place-items: center;
+}
+.contact_form .inputbox {
+  padding: 9px 4px;
+    border-radius: 6px;
+}
+.contact_form .contact__form-input{
+padding:  10px 10px;
+}
 .contact__form-input {
     position: absolute;
     top: 0;
