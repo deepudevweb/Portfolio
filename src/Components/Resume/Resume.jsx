@@ -45,6 +45,7 @@ const Resume = () => {
       </div>
     </section>
     </div>
+    <img src="../assets/UC-dd0c0bb4-b57b-4e68-b01d-b6d84aa82923.jpg" alt="" />
     </div>
     
   )
