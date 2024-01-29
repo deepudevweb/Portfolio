@@ -22,32 +22,32 @@ const Sidebar = () => {
           <ul className="nav__list">
             <li className="nav__item">
               <a href="#home" className="nav__link">
-                <IoHomeSharp />
+                <IoHomeSharp className='sidelogo'/>
               </a>
             </li>
             <li className="nav__item">
               <a href="#about" className="nav__link">
-                <FaUser />
+                <FaUser className='sidelogo'/>
               </a>
             </li>
             <li className="nav__item">
               <a href="#services" className="nav__link">
-                <IoBriefcase />
+                <IoBriefcase className='sidelogo'/>
               </a>
             </li>
             <li className="nav__item">
               <a href="#resume" className="nav__link">
-                <FaUserGraduate />
+                <FaUserGraduate className='sidelogo'/>
               </a>
             </li>
             <li className="nav__item">
               <a href="#work" className="nav__link">
-                <IoLayersSharp/>
+                <IoLayersSharp className='sidelogo'/>
               </a>
             </li>
             <li className="nav__item">
               <a href="#contact" className="nav__link">
-                <FaCommentDots />
+                <FaCommentDots className='sidelogo'/>
               </a>
             </li>
           </ul>
