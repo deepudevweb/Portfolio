@@ -16,21 +16,13 @@ const Data = [
       title: "Certificate of Completion",
       desc: "Mordern React [2023]",
     },
-    // {
-    //   id: 3,
-    //   category: "education",
-    //   icon: "icon-graduation",
-    //   year: "2009 - 2013",
-    //   title: "Honours Degree",
-    //   desc: "Lorem ipsum dolor sit amet quo ei simul congue exerci     ad nec admodum perfecto.",
-    // },
     {
       id: 4,
       category: "experience",
       icon: "icon-briefcase",
       year: "2019 - present",
-      title: "Web Designer",
-      desc: "Lorem ipsum dolor sit amet quo ei simul congue exerci     ad nec admodum perfecto.",
+      title: "React Freamework",
+      desc: "NextJs, React Bootstrap",
     },
     {
       id: 5,
@@ -38,15 +30,7 @@ const Data = [
       icon: "icon-briefcase",
       year: "2013 - 2017",
       title: "Front-End Developer",
-      desc: "Lorem ipsum dolor sit amet quo ei simul congue exerci     ad nec admodum perfecto.",
-    },
-    {
-      id: 6,
-      category: "experience",
-      icon: "icon-briefcase",
-      year: "2009 - 2013",
-      title: "Back-End Developer",
-      desc: "Lorem ipsum dolor sit amet quo ei simul congue exerci     ad nec admodum perfecto.",
+      desc: "Strong command of HTML, CSS, and JavaScript is fundamental Knowledge of the latest standards",
     },
   ];
 
