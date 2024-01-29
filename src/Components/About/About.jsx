@@ -14,7 +14,8 @@ const About = () => {
         <div className="about__data grid">
           <div className="about__info">
             <p className="about__description">
-              I am Deepu prajapati Doe, web developer from London, United Kingdom. I have rich experience in web site design and building and customization, also I am good at WordPress.
+              
+Enthusiastic Frontend Developer hailing from India, skilled in React.js. Transforming design visions into captivating web interfaces, I bring a blend of creativity and technical prowess. Committed to crafting seamless user experiences, I thrive on pushing boundaries and contributing to the ever-evolving landscape of web development.
             </p>
             <a href="##" className="btn"> Download CV</a>
           </div>
