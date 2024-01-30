@@ -2,7 +2,7 @@ import React from 'react';
 import './About.css';
 import Image from '../assets/avatar-2.svg'
 import Aboutbox from './Aboutbox';
-
+import pdffile from '../assets/Deepu.pdf'
 const About = () => {
   return (
     <div className="background-container">
@@ -17,7 +17,7 @@ const About = () => {
 
                   Enthusiastic Frontend Developer hailing from India, skilled in React.js. Transforming design visions into captivating web interfaces, I bring a blend of creativity and technical prowess. Committed to crafting seamless user experiences, I thrive on pushing boundaries and contributing to the ever-evolving landscape of web development.
                 </p>
-                <a href="##" className="btn"> Download CV</a>
+                <a href={pdffile} target='_blank' className="btn"> Download CV</a>
               </div>
               <div className="about__skills grid">
                 <div className="skills__data">

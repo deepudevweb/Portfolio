@@ -224,7 +224,7 @@
          bottom: 25px;
     }
     .about__boxes {
-        grid-template-columns: repeat(3, 0px);
+        grid-template-columns: repeat(3, 65px);
     }
   }
 
