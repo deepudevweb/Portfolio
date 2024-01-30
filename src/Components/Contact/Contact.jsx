@@ -1,7 +1,23 @@
-import React from 'react';
 import './Contact.css';
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_134dkqo', 'template_xoilgtk', form.current, 'LZazUpxRKCZVzlnA7')
+      .then((result) => {
+          console.log(result.text);
+          console.log("message send");
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
+
   return (
     <div className="background-container">
     <div className="background-animation">
@@ -14,23 +30,19 @@ const Contact = () => {
             <p className="contact__details">Don't like forms? Send me an email. 👋</p>
           </div>
 
-          <form action="" className="contact form">
+          <form ref={form}  className="contact-form" onSubmit={sendEmail} >
             <div className="contact__form-group">
               <div className="contact__form-div">
-                <input type="text" className="contact__form-input" placeholder='Insert your name'/>
+                <input type="text" className="contact__form-input" placeholder='Insert your name' name="user_name" />
               </div>
 
               <div className="contact__form-div">
-                <input type="emsil" className="contact__form-input" placeholder='Insert your subject'/>
-              </div>
-
-              <div className="contact__form-div">
-                <input type="text" className="contact__form-input" placeholder='Insert your message'/>
+                <input type="email" className="contact__form-input" placeholder='Insert your Email' name="user_email"  />
               </div>
 
               <div className="contact__form-div contact__form-arae">
                 <textarea 
-                name="" 
+                name="message" 
                 id="" 
                 cols="30" 
                 rows="10" 
@@ -38,8 +50,8 @@ const Contact = () => {
                 placeholder='Write your message'>
                 </textarea>
               </div>
-              <button className="btn">Send message</button>
             </div>
+            <button className='btn' value="Send"  >Send message</button>
           </form>
         </div>
     </section>
@@ -49,3 +61,33 @@ const Contact = () => {
 }
 
 export default Contact;
+
+// import React, { useRef } from 'react';
+// import emailjs from '@emailjs/browser';
+
+// export const ContactUs = () => {
+//   const form = useRef();
+
+//   const sendEmail = (e) => {
+//     e.preventDefault();
+
+//     emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
+//       .then((result) => {
+//           console.log(result.text);
+//       }, (error) => {
+//           console.log(error.text);
+//       });
+//   };
+
+//   return (
+//     <form ref={form} onSubmit={sendEmail}>
+//       <label>Name</label>
+//       <input type="text" name="user_name" />
+//       <label>Email</label>
+//       <input type="email" name="user_email" />
+//       <label>Message</label>
+//       <textarea name="message" />
+//       <input type="submit" value="Send" />
+//     </form>
+//   );
+// };

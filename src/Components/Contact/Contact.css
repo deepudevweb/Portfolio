@@ -73,7 +73,7 @@
 
 .contact__form-group {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2fr);
     column-gap: 1.5rem;
 }
 
@@ -112,6 +112,11 @@ padding:  10px 10px;
 .contact__form-arae {
     height: 10rem;
 }
+
+.contact__container .contact-form {
+  display: grid;
+}
+
 .contact__form-arae textarea {
 resize: none;
 }
