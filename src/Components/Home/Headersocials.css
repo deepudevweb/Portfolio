@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .social {
     display: flex;
     position: absolute;
@@ -82,3 +83,89 @@
 
  
 
+=======
+.social {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    margin: 1.1rem 0;
+    transform: translate(-50%, -50%);
+    column-gap: .1rem;
+  }
+  
+  .social li {
+    list-style: none;
+  }
+
+  .social li a {
+    width: 31px;
+    height: 30px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 22px;
+    font-size: 20px;
+    margin: 0 10px;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid #fff;
+    z-index: 1;
+}
+
+  .social li a .icon {
+    position: relative;
+    color: #262626;
+    transition: .5s;
+    z-index: 3;
+  }
+  
+  .social li a:hover .icon {
+    color: #fff;
+    transform: rotateY(360deg);
+  }
+  
+  .social li a:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f00;
+    transition: .3s;
+    z-index: 2;
+  }
+  
+  .social li a:hover:before {
+    top: 0;
+  }
+  
+  .social li:nth-child(1) a:before{
+    background: #3b5999;
+  }
+  
+  .social li:nth-child(2) a:before{
+    background: #55acee;
+  }
+  
+  .social li:nth-child(3) a:before {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  }
+  
+  .social li:nth-child(4) a:before {
+    background: #2b3137;
+  }
+  .social li:nth-child(5) a:before {
+    background: #0A66C2;
+  }
+  .social li:nth-child(6) a:before {
+    background: #db4437;
+  }  
+  
+    
+  
+
+ 
+
+>>>>>>> ab5bf47fce061cdea05ee9488621eb8f35bec37f
