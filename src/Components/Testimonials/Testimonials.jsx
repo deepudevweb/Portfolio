@@ -1,17 +1,16 @@
-<<<<<<< HEAD
-import React from 'react';
-import './Testimonials.css';
-import Image1 from '../assets/avatar-1.svg';
-import Image3 from '../assets/avatar-3.svg';
+import React from "react";
+import "./Testimonials.css";
+import Image1 from "../assets/avatar-1.svg";
+import Image3 from "../assets/avatar-3.svg";
 
 // import Swiper core and required modules
-import { Pagination } from 'swiper/modules';
+import { Pagination } from "swiper/modules";
 
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/pagination';
+import "swiper/css";
+import "swiper/css/pagination";
 
 const data = [
   {
@@ -32,111 +31,40 @@ const data = [
   },
 ];
 
-
 const Testimonials = () => {
   return (
     <div className="background-container">
-    <div className="background-animation">
-    <section className="testimonials container section">
-      <h2 className="section__title">Clients & Reviews</h2>
+      <div className="background-animation">
+        <section className="testimonials container section">
+          <h2 className="section__title">Clients & Reviews</h2>
 
-      <Swiper className="testimonials__container grid"
-         // install Swiper modules
-         modules={[ Pagination ]}
-         spaceBetween={30}
-         slidesPerView={1}
-         loop={true}
-         grabCursor={true}
-         pagination={{ clickable: true }}
-       >
-        {data.map(({id, image, title, subtitle, comment}) => {
-          return (
-            <SwiperSlide className="testimonials__item" key={id}>
-              <div className="thumb">
-                <img src={image} alt="" />
-              </div>
-              <h3 className="testimonials__title">{title}</h3>
-              <span className="subtitle">{subtitle}</span>
-              <div className="comment">{comment}</div>
-            </SwiperSlide>
-          )
-        })}
-      </Swiper>
-    </section>
+          <Swiper
+            className="testimonials__container grid"
+            // install Swiper modules
+            modules={[Pagination]}
+            spaceBetween={30}
+            slidesPerView={1}
+            loop={true}
+            grabCursor={true}
+            pagination={{ clickable: true }}
+          >
+            {data.map(({ id, image, title, subtitle, comment }) => {
+              return (
+                <SwiperSlide className="testimonials__item" key={id}>
+                  <div className="thumb">
+                    <img src={image} alt="" />
+                  </div>
+                  <h3 className="testimonials__title">{title}</h3>
+                  <span className="subtitle">{subtitle}</span>
+                  <div className="comment">{comment}</div>
+                </SwiperSlide>
+              );
+            })}
+          </Swiper>
+        </section>
+      </div>
     </div>
-    </div>
-  )
-}
+  );
+};
 
-=======
-import React from 'react';
-import './Testimonials.css';
-import Image1 from '../assets/avatar-1.svg';
-import Image3 from '../assets/avatar-3.svg';
-
-// import Swiper core and required modules
-import { Pagination } from 'swiper/modules';
-
-import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/pagination';
-
-const data = [
-  {
-    id: 1,
-    image: Image1,
-    title: "John Doe",
-    subtitle: "Product designer at Dribble",
-    comment:
-      "I enjoy working with the theme and learn so much. You       guys make the process fun and interesting. Good luck! 👍",
-  },
-  {
-    id: 2,
-    image: Image3,
-    title: "John Doe",
-    subtitle: "Product designer at Dribble",
-    comment:
-      "I enjoy working with the theme and learn so much. You       guys make the process fun and interesting. Good luck! 👍",
-  },
-];
-
-
-const Testimonials = () => {
-  return (
-    <div className="background-container">
-    <div className="background-animation">
-    <section className="testimonials container section">
-      <h2 className="section__title">Clients & Reviews</h2>
-
-      <Swiper className="testimonials__container grid"
-         // install Swiper modules
-         modules={[ Pagination ]}
-         spaceBetween={30}
-         slidesPerView={1}
-         loop={true}
-         grabCursor={true}
-         pagination={{ clickable: true }}
-       >
-        {data.map(({id, image, title, subtitle, comment}) => {
-          return (
-            <SwiperSlide className="testimonials__item" key={id}>
-              <div className="thumb">
-                <img src={image} alt="" />
-              </div>
-              <h3 className="testimonials__title">{title}</h3>
-              <span className="subtitle">{subtitle}</span>
-              <div className="comment">{comment}</div>
-            </SwiperSlide>
-          )
-        })}
-      </Swiper>
-    </section>
-    </div>
-    </div>
-  )
-}
-
->>>>>>> ab5bf47fce061cdea05ee9488621eb8f35bec37f
 export default Testimonials;
