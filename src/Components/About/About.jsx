@@ -2,7 +2,7 @@ import React from "react";
 import "./About.css";
 import Image from "../assets/avatar-2.svg";
 import Aboutbox from "./Aboutbox";
-import pdffile from "../assets/DeepuCv-2025.pdf";
+import pdffile from "../assets/Deepu-2025-2026 cv.pdf";
 
 const About = () => {
   return (
