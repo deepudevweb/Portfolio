@@ -1,7 +1,7 @@
-
 import Work1 from "../assets/neoncard.png";
 import Work2 from "../assets/dpmovie.png";
-import Work3 from "../assets/searchbar.png";
+import Work4 from "../assets/dp-coffee.png";
+import Work5 from "../assets/dp-wallpapers.png";
 const Menu = [
   {
     id: 1,
@@ -19,12 +19,18 @@ const Menu = [
   },
   {
     id: 3,
-    image: Work3,
-    title: "Searchbar Image By API",
+    image: Work5,
+    title: "DP Wallpapers",
     category: "Searchbar Api",
     link: "https://dpsarch-bar.vercel.app/",
+  },
+  {
+    id: 4,
+    image: Work4,
+    title: "DP Coffee",
+    category: "Coffee Api",
+    link: "dpcoffee.netlify.app/",
   },
 ];
 
 export default Menu;
-
